@@ -15,7 +15,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, related_name="products", on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField()
-    image_url = models.URLField()
+    image_url = models.URLField(max_length=500, blank=True, null=True)
     description = models.TextField(blank=True)
     status = models.BooleanField(default=True)
     date_created = models.DateTimeField(auto_now_add=True)
