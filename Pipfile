@@ -8,6 +8,7 @@ django = "*"
 djangorestframework = "*"
 gunicorn = "*"
 django-filter = "*"
+djangorestframework-simplejwt = "*"
 
 [dev-packages]
 
